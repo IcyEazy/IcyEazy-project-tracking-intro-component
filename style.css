@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:ital,wght@0,700;1,400&display=swap');
+
+body{
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    padding: 2.875rem 0 4.75rem 4.75rem;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.desktop a, .mobile a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header, .texts-content{
+    padding-right: 4.75rem;
+}
+
+.menu-btn{
+    cursor: pointer;
+}
+
+.mobile, .close-btn, .hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.device{
+    width: 100%;
+}
+
+.desk-img{
+    margin-right: -10rem;
+}
+header{
+    margin-bottom: 5rem;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+nav, .nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links hr{
+    width: 6px;
+    height: 6px;
+    background-color: rgb(193, 186, 186);
+    border-radius: 50%;
+    margin: auto 2.5rem;
+}
+
+.features{
+    margin: auto 2.5rem;
+}
+
+a.login{
+    font-weight: 400;
+    color: rgb(143, 139, 139);
+}
+
+.mob{
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.mob-nav-links{
+    border: 2px solid white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    position: absolute;
+    width: 85%;
+    top: 0;
+    left: 0;
+}
+.mob-nav-links hr{
+    width: 100%;
+    margin: 1.25rem auto;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.new-mono{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.new{
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    padding: .1rem .5rem .17rem .5rem;
+    border-radius: 30px;
+    margin-right: 1rem;
+    font-weight: 700;
+}
+
+.mono{
+    text-transform: uppercase;
+    word-spacing: .4rem;
+    color: hsl(231, 7%, 65%);
+    letter-spacing: .09rem;
+}
+
+.power{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 35px;
+    margin-top: -.1rem;
+}
+
+.project{
+   color: rgb(83, 81, 81);
+   margin: -1rem 0 2rem 0;
+}
+
+.demo{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+button{
+    color: white;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    background-color: hsl(0, 100%, 68%);
+    border-color: hsl(0, 100%, 68%);
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+}
+button:hover{
+    opacity: .7;
+}
+
+.demo-texts{
+    word-spacing: .3rem;
+    letter-spacing: .09rem;
+    color: hsl(231, 7%, 65%);
+}
+
+
+@media screen and (max-width: 560px){
+    body{
+        padding: 2.25rem 0 3.5rem 2.25rem;
+    }
+    header, .texts-content{
+        padding-right: 2.25rem;
+        width: auto;
+    }
+    header{
+        margin-bottom: 2.5rem;
+    }
+    .features{
+        margin: 1.25rem auto;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    section{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .power{
+        font-size: 28px;
+    }
+    .mob-img{
+        margin-right: -7rem;
+    }
+}
+
+.attribution {font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
