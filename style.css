@@ -13,6 +13,7 @@ body{
     color: black;
     text-transform: uppercase;
     font-family: 'Barlow Condensed', sans-serif;
+    transition: all 0.4s;
 }
 
 a:hover{
@@ -153,6 +154,7 @@ button{
     font-weight: 700;
     font-size: 13px;
     cursor: pointer;
+    transition: all 0.4s;
 }
 button:hover{
     opacity: .7;
